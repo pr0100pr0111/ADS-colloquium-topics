@@ -1,6 +1,6 @@
 #import "../lib/style.typ": *
 
-#show: ticket.with(number: 6, title: "Сортировка подсчётом")
+#show: ticket.with(number: 7, title: "Сортировка подсчётом")
 
 #quick[
   Для целых ключей из небольшого диапазона $[0, k)$: считаем, сколько раз встречается

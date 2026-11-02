@@ -50,17 +50,17 @@
 
 * **Базовая версия** (компактная шпаргалка без аппендикса):
   ```bash
-  typst compile --root . topics/01_time_complexity.typ build/01.pdf
+  typst compile --root . topics/01_complexity.typ build/01.pdf
   ```
 
 * **Полная версия** (с подробными доказательствами из `#appendix`):
   ```bash
-  typst compile --root . --input full=1 topics/01_time_complexity.typ build/01_full.pdf
+  typst compile --root . --input full=1 topics/01_complexity.typ build/01_full.pdf
   ```
 
 * **Режим отслеживания (live preview / auto-compile при сохранении)**:
   ```bash
-  typst watch --root . topics/01_time_complexity.typ build/01.pdf
+  typst watch --root . topics/01_complexity.typ build/01.pdf
   ```
 
 ---
@@ -89,23 +89,21 @@ done
 
 | № | Файл | Тема билета |
 |:---:|:---|:---|
-| 01 | [`01_time_complexity.typ`](topics/01_time_complexity.typ) | Оценка сложности алгоритма по времени |
-| 02 | [`02_space_complexity.typ`](topics/02_space_complexity.typ) | Оценка сложности алгоритма по памяти |
+| 01 | [`01_complexity.typ`](topics/01_complexity.typ) | Оценка сложности алгоритма: время и память |
+| 02 | [`02_master_theorem.typ`](topics/02_master_theorem.typ) | Мастер-теорема |
 | 03 | [`03_insertion_sort.typ`](topics/03_insertion_sort.typ) | Сортировка вставками |
 | 04 | [`04_merge_sort.typ`](topics/04_merge_sort.typ) | Сортировка слиянием |
 | 05 | [`05_quick_sort.typ`](topics/05_quick_sort.typ) | Быстрая сортировка |
-| 06 | [`06_counting_sort.typ`](topics/06_counting_sort.typ) | Сортировка подсчётом |
-| 07 | [`07_radix_sort.typ`](topics/07_radix_sort.typ) | Цифровая сортировка |
-| 08 | [`08_stack.typ`](topics/08_stack.typ) | Стек |
-| 09 | [`09_queue.typ`](topics/09_queue.typ) | Очередь |
-| 10 | [`10_singly_linked_list.typ`](topics/10_singly_linked_list.typ) | Односвязный список |
-| 11 | [`11_doubly_linked_list.typ`](topics/11_doubly_linked_list.typ) | Двусвязный список |
-| 12 | [`12_circular_list.typ`](topics/12_circular_list.typ) | Циклический список |
-| 13 | [`13_stack_on_list.typ`](topics/13_stack_on_list.typ) | Стек на списках |
-| 14 | [`14_queue_on_list.typ`](topics/14_queue_on_list.typ) | Очередь на списках |
-| 15 | [`15_heap.typ`](topics/15_heap.typ) | Пирамида: восстановление свойств |
-| 16 | [`16_build_heap.typ`](topics/16_build_heap.typ) | Построение пирамиды за $O(n)$ |
-| 17 | [`17_heap_sort.typ`](topics/17_heap_sort.typ) | Пирамидальная сортировка |
-| 18 | [`18_heap_delete.typ`](topics/18_heap_delete.typ) | Удаление элемента из пирамиды |
-| 19 | [`19_priority_queue.typ`](topics/19_priority_queue.typ) | Очередь с приоритетом |
-| 20 | [`20_dynamic_programming.typ`](topics/20_dynamic_programming.typ) | Динамическое программирование |
+| 06 | [`06_quickselect.typ`](topics/06_quickselect.typ) | QuickSelect |
+| 07 | [`07_counting_sort.typ`](topics/07_counting_sort.typ) | Сортировка подсчётом |
+| 08 | [`08_radix_sort.typ`](topics/08_radix_sort.typ) | Цифровая сортировка |
+| 09 | [`09_heap.typ`](topics/09_heap.typ) | Пирамида: восстановление свойств и построение за $O(n)$ |
+| 10 | [`10_heap_sort.typ`](topics/10_heap_sort.typ) | Пирамидальная сортировка |
+| 11 | [`11_heap_sort.typ`](topics/11_heap_sort.typ) | Пирамидальная сортировка за $O(1)$ по памяти |
+| 12 | [`12_priority_queue.typ`](topics/12_priority_queue.typ) | Очередь с приоритетом |
+| 13 | [`13_dp_intro.typ`](topics/13_dp_intro.typ) | Динамическое программирование: определения и виды |
+| 14 | [`14_dp_grasshopper.typ`](topics/14_dp_grasshopper.typ) | ДП: кузнечик |
+| 15 | [`15_dp_knapsack.typ`](topics/15_dp_knapsack.typ) | ДП: рюкзак |
+| 16 | [`16_dp_lis.typ`](topics/16_dp_lis.typ) | ДП: наибольшая возрастающая подпоследовательность |
+| 17 | [`17_dp_intervals_profile.typ`](topics/17_dp_intervals_profile.typ) | Динамика на отрезках и по профилю |
+| 18 | [`18_edit_distance.typ`](topics/18_edit_distance.typ) | Редакционное расстояние |
